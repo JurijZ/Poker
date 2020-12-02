@@ -18,6 +18,11 @@ public class Hand {
         C5 = c5;
     }
 
+    @Override
+    public String toString() {
+        return C1 + ' ' + C2 + ' ' + C3 + ' ' + C4 + ' ' + C5;
+    }
+
     public HashSet<Character> GetHashSetOfSuit(){
         return new HashSet<Character>(Arrays.asList(C1.charAt(1), C2.charAt(1), C3.charAt(1), C4.charAt(1), C5.charAt(1)));
     }

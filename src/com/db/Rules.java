@@ -116,6 +116,7 @@ public class Rules {
         var set2OfValues = p2hand.GetHashSetOfValuesAsIntegers();
         Integer p2same2 = 0;
 
+
         for (Integer v: set1OfValues){
             if (Collections.frequency(list1, v) == 2){
                 p1same2 = v;
@@ -131,7 +132,7 @@ public class Rules {
         if( p1same2 > p2same2 ){
             return -1;
         }
-        else if ( p1same2 < p1same2 ){
+        else if ( p1same2 < p2same2 ){
             return 1;
         }
         else{
